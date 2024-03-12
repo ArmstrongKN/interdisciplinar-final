@@ -1,0 +1,65 @@
+.sidebar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    }
+  
+.sidebar a {
+  margin: auto auto;
+  margin-bottom: 15px;
+  /* padding: 8px 8px 8px 32px; */
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  }
+  
+.sidebar a:hover {
+    color: #70b3ff;
+    transform: scale(103%);
+  }
+
+#x:hover{
+  color: #cf0000;
+  transform: scale(103%);
+}
+  
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+.openbtn {
+    font-size: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 15px;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+  }
+  
+.openbtn:hover {
+    background-color: #2a33b9;
+  }
+  
+.conteudo {
+    overflow-x: hidden;
+    transition: margin-left .5s;
+    /* padding: 16px; */
+  }
+  
+.botao{
+    position: fixed;
+  }

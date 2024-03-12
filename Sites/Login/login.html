@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+    <script src="login.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="title-text">
+            <div class="title login"></div>
+            <div class="title signup"></div>
+        </div>
+        <div class="form-container">
+            <div class="slide-controls">
+                <input type="radio" name="slider" id="login" checked>
+                <input type="radio" name="slider" id="signup">
+                <label for="login" class="slide login">Login</label>
+                <label for="signup" class="slide signup">Registre-se</label>
+                <div class="slide-tab"></div>
+            </div>
+            <div class="form-inner">
+                <form action="../Menu/menu.html" class="login">
+                    <div class="field">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="field">
+                        <input type="password" placeholder="Senha" required>
+                    </div>
+                    <div class="pass-link"><a href="#">Esqueceu a senha?</a></div>
+                    <div class="field">
+                        <input type="submit" value="Login" id="login">
+                    </div>
+                    <div class="signup-link">Não tem conta? <a href="#">Registre-se agora</a></div>
+                </form>
+
+                <form class="signup">
+                    <div class="field">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="field">
+                        <input type="password" placeholder="Senha" required>
+                    </div>
+                    <div class="field">
+                        <input type="password" placeholder="Confirme a senha" required>
+                    </div>
+                    <div class="field">
+                        <input type="submit" value="Criar conta">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const loginForm = document.querySelector("form.login")
+        const signupForm = document.querySelector("form.signup")
+        const loginBtn = document.querySelector("label.login")
+        const signupBtn = document.querySelector("label.signup")
+        const signupLink = document.querySelector(".signup-link a")
+        const loginText = document.querySelector(".title-text .login")
+        const signupText = document.querySelector(".title-text .signup")
+
+        signupBtn.onclick = (() =>{
+        loginForm.style.marginLeft = "-50%";
+        loginText.style.marginLeft = "-50%";
+        });
+        loginBtn.onclick = (() =>{
+        loginForm.style.marginLeft = "0%";
+        loginText.style.marginLeft = "0%";
+        });
+        signupLink.onclick = (() =>{
+            signupBtn.click();
+            return false;
+        })
+    </script>
+
+
+
+</body>
+</html>

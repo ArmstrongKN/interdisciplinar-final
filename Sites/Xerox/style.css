@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body, html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #3d3d3d;
+    line-height: 20px;
+}
+
+header{
+    width: 100%;
+    height: 6em;
+    background-color: #949494;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    align-self: center;
+}
+
+
+nav{
+    width: 100%;
+    height: 3rem;
+    background: linear-gradient(0deg, #3d3d3d 0%, #949494 100%);
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+}
+
+.sections{
+    display: flex;
+    align-items: center;
+}
+
+.sections a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.sections ul li{
+    transition: all 0.2s;
+    text-shadow: 2px 2px rgb(82, 82, 82);
+    font-size: 1.3rem;
+    margin-right: 25px;
+    list-style: none;
+    float: left;
+}
+
+.sections li:hover{
+    transition: all 0.2s;
+    text-shadow: none;
+    transform: scale(103%);
+    text-decoration: underline 2px red;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo{
+    background-color: rgb(201, 201, 201);
+    width: 70%;
+    height: 90%;
+    border-radius: 8px;
+}
+
+.texto h1{
+    margin: 30px 0;
+    color:  #f51927;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.produtos h2{
+    margin-top: 30px;
+    color:  #f51927;
+    text-align: center;
+}
+
+p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 10px 65px;
+    color: black;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.2rem;
+    margin: 15px;
+    color:  #f51927;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+h3{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #222222;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.carrossel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    border: 0;
+    width: 85%;
+    height: 1px;
+    background: linear-gradient(to right, rgb(201, 201, 201), #f13945, #f51927, #f13945, rgb(201, 201, 201) );
+    margin-bottom: 25px;
+}
+
+.imagem img{
+    width: 45%;
+    border:  2px black;
+    border-style: groove;
+}
+.imagem{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+}
+
+/* footer */
+
+.footer{
+    margin-top: 50px;
+    background:#505050;
+    padding:30px 0px;
+    text-align:center;
+    }
+    
+.footer img{
+    width: 40px;
+}
+
+.footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:rgb(163, 162, 162);
+    font-size:0.8em;
+    }
+    
+.footer .row a{
+    text-decoration:none;
+    color:rgb(163, 162, 162);
+    transition:0.5s;
+    }
+    
+.footer .row a:hover{
+    color:#fff;
+    }
+    
+.footer .row ul{
+    width:100%;
+    }
+    
+.footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+.footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+@media (max-width:720px){
+    .footer{
+        text-align:left;
+        padding:5%;
+        }
+    .footer .row ul li{
+        display:block;
+        margin:10px 0px;
+        text-align:left;
+        }
+    .footer .row a i{
+        margin:0% 3%;
+        }
+}
+
+/* estilo botao topo */
+
+#myBtn {
+    text-align: center;
+	display: none;
+	position: fixed; /* Fixed/sticky position */
+	bottom: 20px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: #cfc5c5; /* Set a background color */
+	color: #000;
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 5px 15px;
+    border: 3px solid #000000;
+	border-radius: 50%;
+	font-size: 35px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    transition: all 0.5s;
+	background-color: transparent; 
+    -webkit-text-stroke: yellow 1px;
+  }
